@@ -7,6 +7,7 @@ import NoPage from "./pages/no-page/NoPage";
 import PrivateRoute from "./routes/PrivateRoute";
 import './App.css';
 import Movies from "./pages/Movies/Movies";
+import Movie from "./pages/Movie/Movie";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="profile" element={<PrivateRoute Component={Profile} />} />
           <Route path="movies" element={<Movies />} />
+          <Route path="movie" element={<Movie />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
