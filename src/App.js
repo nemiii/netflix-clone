@@ -8,6 +8,8 @@ import PrivateRoute from "./routes/PrivateRoute";
 import './App.css';
 import Movies from "./pages/Movies/Movies";
 import Movie from "./pages/Movie/Movie";
+import NewsList from "./pages/news-list/NewsList";
+import NewsDetail from "./pages/news/NewsDetail";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
           <Route path="profile" element={<PrivateRoute Component={Profile} />} />
           <Route path="movies" element={<Movies />} />
           <Route path="movie" element={<Movie />} />
+          <Route path="news" element={<NewsList />} />
+          <Route path="newsDetail" element={<NewsDetail />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
