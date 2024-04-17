@@ -107,14 +107,14 @@
       top : win.scrollTop(),
       left : win.scrollLeft()
     };
-    viewport.right = viewport.left + win.width();
+    viewport.right = viewport?.left + win.width();
     viewport.bottom = viewport.top + win.height();
     
     var bounds = dropdown.offset();
-      bounds.right = bounds.left + dropdown.outerWidth();
+      bounds.right = bounds?.left + dropdown.outerWidth();
       bounds.bottom = bounds.top + dropdown.outerHeight();
     var position = dropdown.position();
-      position.right = bounds.left + dropdown.outerWidth();
+      position.right = bounds?.left + dropdown.outerWidth();
       position.bottom = bounds.top + dropdown.outerHeight();
   
     var side = ''

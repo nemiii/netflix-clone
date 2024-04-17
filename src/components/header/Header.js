@@ -19,28 +19,12 @@ const Header = () => {
 						<li className="hidden">
 							<a href="#page-top"></a>
 						</li>
-						<li className="dropdown first">
-							<a className="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
-							Home <i className="fa fa-angle-down" aria-hidden="true"></i>
-							</a>
-							<ul className="dropdown-menu level1">
-								<li><a href="index.html">Home 01</a></li>
-								<li><a href="homev2.html">Home 02</a></li>
-								<li><a href="homev3.html">Home 03</a></li>
-							</ul>
-						</li>	
+						<li><a href="/">Home</a></li>
 						<li className="dropdown first">
 							<a className="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
 							movies<i className="fa fa-angle-down" aria-hidden="true"></i>
 							</a>
 							<ul className="dropdown-menu level1">
-								<li className="dropdown">
-									<a href="#">about us <i className="fa fa-caret-right" aria-hidden="true"></i></a>
-									<ul className="dropdown-menu level2">
-										<li><a href="aboutv1.html">About Us 01</a></li>
-										<li><a href="aboutv2.html">About Us 02</a></li>
-									</ul>
-								</li>
 								<li><a href="moviegrid.html">Movie grid</a></li>
 								<li><a href="moviegridfw.html">movie grid full width</a></li>
 								<li><a href="movielist.html">Movie list</a></li>
