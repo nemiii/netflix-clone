@@ -107,7 +107,7 @@
       top : win.scrollTop(),
       left : win.scrollLeft()
     };
-    viewport.right = viewport?.left + win.width();
+    viewport.right = viewport.left + win.width();
     viewport.bottom = viewport.top + win.height();
     
     var bounds = dropdown.offset();
