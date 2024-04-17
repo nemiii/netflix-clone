@@ -1,6 +1,27 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Here's an explanation of each folder and file in the structure:
+
+assets: Contains static assets like images, fonts, and global stylesheets. \
+components: Contains reusable presentational components categorized by their purpose. \
+containers: Contains components responsible for combining multiple presentational components and managing state. \
+contexts: Contains React context providers for managing global application state. \
+hooks: Contains custom React hooks for sharing logic between components. \
+services: Contains modules responsible for interacting with external services or APIs. \
+utils: Contains utility functions and helper modules used across the application. \
+routes: Contains route components and configuration for defining application routes. \
+store: Contains Redux store setup, actions, and reducers for managing application state. \
+App.js: Main application component responsible for routing and layout. \
+index.js: Entry point for rendering the React application. \
+index.scss: Main stylesheet for global styles and imports. \
+setupTests.js: Configuration file for setting up testing libraries like Jest and Enzyme. \
+.env: Environment configuration file for storing environment variables. \
+.eslintrc.json: ESLint configuration file for linting JavaScript code. \
+.prettierrc: Prettier configuration file for code formatting rules. \
+README.md: Documentation file containing project overview, setup instructions, and other relevant information. \
+
+
+This structure provides a clear separation of concerns, facilitates code reuse, and allows for easy navigation and maintenance of the project. Adjust the structure based on the specific requirements and complexity of your application.
 
 ## Available Scripts
 
