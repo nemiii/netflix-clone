@@ -6,6 +6,7 @@ import Profile from "./pages/profile/Profile";
 import NoPage from "./pages/no-page/NoPage";
 import PrivateRoute from "./routes/PrivateRoute";
 import './App.css';
+import Movies from "./pages/Movies/Movies";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="contact" element={<Contact />} />
           <Route path="profile" element={<PrivateRoute Component={Profile} />} />
+          <Route path="movies" element={<Movies />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
