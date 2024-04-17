@@ -1,4 +1,30 @@
 const Latest = () => {
+	const news = [
+		{
+			title: "Godzilla: King Of The Monsters Adds O’Shea Jackson Jr",
+			createdDate: "27 Mar 2017",
+			image: "images/uploads/blogv21.jpg",
+			description: "Looks like Kong: Skull Island started a tradition with its casting of Straight ..."
+		},
+		{
+			title: "First Official Images of Alicia Vikander As Tomb Raider’s Lara Croft",
+			createdDate: "27 Mar 2017",
+			image: "images/uploads/blogv22.jpg",
+			description: "Aside from the her digital incarnation, the most recognisable image of Tomb ..."
+		},
+		{
+			title: "New Spider-Man: Homecoming Poster Finds Peter Parker At Rest",
+			createdDate: "27 Mar 2017",
+			image: "images/uploads/blogv23.jpg",
+			description: "He might be a primary protector of New York City, but at heart, Peter Parker is ..."
+		},
+		{
+			title: "Joseph Gordon-Levitt Directing Moive Musical Comedy Wingmen",
+			createdDate: "27 Mar 2017",
+			image: "images/uploads/blogv24.jpg",
+			description: "A little over a year ago, we learned that Joseph Gordon-Levitt and Channing ..."
+		}
+	]
     return (
         <div className="latestnew full-width">
 		<div className="row">
@@ -11,38 +37,14 @@ const Latest = () => {
 					<a href="bloggrid.html" className="viewall">see all news <i className="ion-ios-arrow-right"></i></a>
 				</div>
 				<div className="latestnewv2">
-					<div className="blog-item-style-2">
-						<a href="blogdetail.html"><img src="images/uploads/blogv21.jpg" alt=""/></a>
+					{news.length && news.map((newItem, index) => <div key={index} className="blog-item-style-2">
+						<a href="blogdetail.html"><img src={newItem.image} alt={newItem.title} /></a>
 						<div className="blog-it-infor">
-							<h3><a href="blogdetail.html">Godzilla: King Of The Monsters Adds O’Shea Jackson Jr</a></h3>
-							<span className="time">27 Mar 2017</span>
-							<p>Looks like Kong: Skull Island started a tradition with its casting of Straight ...</p>
+							<h3><a href="blogdetail.html">{newItem.title}</a></h3>
+							<span className="time">{newItem.createdDate}</span>
+							<p>{newItem.description}</p>
 						</div>
-					</div>
-					<div className="blog-item-style-2">
-						<a href="blogdetail.html"><img src="images/uploads/blogv22.jpg" alt=""/></a>
-						<div className="blog-it-infor">
-							<h3><a href="blogdetail.html">First Official Images of Alicia Vikander As Tomb Raider’s Lara Croft</a></h3>
-							<span className="time">27 Mar 2017</span>
-							<p>Aside from the her digital incarnation, the most recognisable image of Tomb ...</p>
-						</div>
-					</div>
-					<div className="blog-item-style-2">
-						<a href="blogdetail.html"><img src="images/uploads/blogv23.jpg" alt=""/></a>
-						<div className="blog-it-infor">
-							<h3><a href="blogdetail.html">New Spider-Man: Homecoming Poster Finds Peter Parker At Rest</a></h3>
-							<span className="time">27 Mar 2017</span>
-							<p>He might be a primary protector of New York City, but at heart, Peter Parker is ...</p>
-						</div>
-					</div>
-					<div className="blog-item-style-2">
-						<a href="blogdetail.html"><img src="images/uploads/blogv24.jpg" alt=""/></a>
-						<div className="blog-it-infor">
-							<h3><a href="blogdetail.html">Joseph Gordon-Levitt Directing Moive Musical Comedy Wingmen</a></h3>
-							<span className="time">27 Mar 2017</span>
-							<p>A little over a year ago, we learned that Joseph Gordon-Levitt and Channing ...</p>
-						</div>
-					</div>
+					</div>)}
 				</div>
 			</div>
 			<div className="col-md-3">
