@@ -1,5 +1,17 @@
+import Latest from "./Latest";
+import Movies from "./Movies";
+import Sliders from "./Slider";
+import Trailers from "./Trailers";
+
 const Home = () => {
-    return <h1>Home</h1>;
-  };
-  
-  export default Home;
+    return (
+        <>
+            <Sliders />
+            <Movies />
+            <Trailers />
+            <Latest />
+        </>
+    );
+};
+
+export default Home;
